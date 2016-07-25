@@ -1,7 +1,7 @@
 # theApi
 Api to test whether a string of parentheses are valid or not.
 Submit post data as such "{ str : *data*}" with data being the string of parentheses.
-For best results make sure data consists of only a string with no spaces and/or characters other than '{}[]()'.
+For best results make sure data consists of only a string with no spaces and/or characters other than paratheses, brackets, or braces.
 
 ## To install ##
 Simply clone this repository into your designated folder.
