@@ -10,13 +10,18 @@ The server is now started and awaiting data
 ## File structure ##
 
 app.js (server)
+
 package.json
+
 routes
 
 └──routes.js
+
 servers
 
+
 └──api.js
+
 test
 
 └──test.html
