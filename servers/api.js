@@ -1,6 +1,10 @@
 //the actual api itself.
 var api = function(req, res){
 
+  if(!req.body.str){
+    res.json(false);
+    return;
+  }
   //define variables
   var theObject = {
     '}' : '{',

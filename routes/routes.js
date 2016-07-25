@@ -12,6 +12,7 @@ var appRouter = function(app){
 
   //send data to the api
   app.post('/', function(req, res){
+    console.log(req.body);
     api(req, res);
   });
 
