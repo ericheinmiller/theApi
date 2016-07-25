@@ -11,12 +11,12 @@ The server is now started and awaiting data
 
 app.js (server)
 package.json
-routes__
-        |___routes.js
-servers_
-        |__api.js
-test____
-        |__test.html
+routes
+└──routes.js
+servers
+└──api.js
+test
+└──test.html
 
 ## test.html ##
 
