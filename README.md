@@ -20,7 +20,7 @@ servers
  └──api.js
 
 test
- └──test.html
+         └──test.html
 
 ## test.html ##
 
