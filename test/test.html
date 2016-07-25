@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    <script>
+$( document ).ready( function(){
+  $("#button").on("click",function(){
+    var postData = $('#theInput').val();
+    $.post("http://localhost:8000/", { str : postData}, function(data, status){
+      if(data === true){
+        $('#results').html('true');
+      }
+      else{
+        $('#results').html('false');
+      }
+    })
+  })
+})
+    </script>
+  </head>
+  <body>
+    <input id="theInput">
+    <button id="button">Send</button>
+    <div id="results">
+    </div>
+  </body>
+  <script src="./test.js"></script> 
+</html>
