@@ -8,21 +8,21 @@ Once cloned, go into theApi and run 'node app.js'
 The server is now started and awaiting data
 
 ## File structure ##
-
+```
 app.js (server)
-
+node_modules
+  └──body-parser
+  └──express
 package.json
 routes
-
-└──routes.js
+  └──routes.js
 servers
-
-└──api.js
+  └──api.js
 test
-
-└──test.html
+  └──test.html
+```
 
 ## test.html ##
 
-Very simple html page to test whether the api works or not when hosted locally
+Very simple html page to test whether the api works or not when hosted locally. Simply type your string and send.
 
