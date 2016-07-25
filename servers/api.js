@@ -1,6 +1,7 @@
 //the actual api itself.
 var api = function(req, res){
 
+  //if information doesn't exists send false
   if(!req.body.str){
     res.json(false);
     return;
@@ -32,6 +33,14 @@ var api = function(req, res){
 
     //using the object we check to see if value of the last index of the array matches the object's key value pair. If not, we return false and stop the app
     else{
+
+      //if the array is empty when the else statement is called, it means that there wasn't an ititial push of an opening parentheses
+      if(theArray.length === 0){
+        res.json(false);
+        return
+      }
+
+      //if they don't match, return false
       if(theArray[theArray.length -1] !== theObject[str[i]]){
         res.json(false);
         return
